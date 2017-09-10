@@ -8,16 +8,19 @@ from tor_core.initialize import build_bot
 
 from tor_flair import __version__
 
+settings_location = 'tor-flair/config/settings'
+instructions_location = 'tor-flair/config/instructions'
+
 instructions_page = (
     'Thanks for using the Transcribers of Reddit flair helper bot! Our goal '
     'is to make your day a little easier by automating the process of identifying '
     'our volunteers on your subreddit.\n\n'
-    'Simply set flair-text and / or flair-css in /wiki/config/tor-flair/settings '
+    'Simply set flair-text and / or flair-css in {} '
     'and u/tor_flair_bot will get the changes the next time a volunteer accepts a '
     'job for your subreddit.\n\n'
     'If you have any questions or issues with the bot, please '
     'send a modmail to r/TranscribersOfReddit and we\'ll get you sorted as quickly '
-    'as we can!'
+    'as we can!'.format(settings_location)
 )
 
 
@@ -32,9 +35,6 @@ settings_page = (
     'flair-text:\n\n'
     'flair-css:'
 )
-
-settings_location = 'tor-flair/config/settings'
-instructions_location = 'tor-flair/config/instructions'
 
 
 def setup_wiki(subreddit):
