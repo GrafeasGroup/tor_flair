@@ -36,11 +36,11 @@ def long_description():
 
 
 setup(
-    name='tor_ocr',
+    name='tor_flair',
     version=__version__,
     description='',
     long_description=long_description(),
-    url='https://github.com/TranscribersOfReddit/ToR_OCR',
+    url='https://github.com/TranscribersOfReddit/ToR_Flair',
     author='Joe Kaufeld',
     author_email='joe.kaufeld@gmail.com',
     license='MIT',
@@ -60,7 +60,7 @@ setup(
     test_suite='test',
     entry_points={
         'console_scripts': [
-            'tor-apprentice = tor_ocr.main:main',
+            'tor-flair = tor_flair.main:main',
         ],
     },
     tests_require=[
@@ -69,14 +69,7 @@ setup(
     cmdclass={'test': PyTest},
     install_requires=[
         'praw==5.0.1',
-        'redis<3.0.0',
         'tor_core>=0.2.0,<0.3.0',
-        'addict',
-        'tesserocr',
-        'wget',
-        'sh',
-        'bugsnag',
-        'cython',  # WORKAROUND: 'tesserocr' only sometimes installs this dependency
     ],
     dependency_links=[
         'git+https://github.com/TranscribersOfReddit/tor_core.git@master#egg=tor_core-0.2.1',
