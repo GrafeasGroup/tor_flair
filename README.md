@@ -1,8 +1,8 @@
-[![Stories in Ready](https://badge.waffle.io/TranscribersOfReddit/ToR_OCR.png?label=ready&title=Ready)](http://waffle.io/TranscribersOfReddit/ToR_OCR)
+[![Waffle.io - Columns and their card count](https://badge.waffle.io/TranscribersOfReddit/TranscribersOfReddit.svg?columns=all)](http://waffle.io/TranscribersOfReddit/TranscribersOfReddit)
 
 # Flair Moderator Bot - Transcribers Of Reddit
 
-This is the source code for the ToR Flair Moderator Helper (`/u/tor_flair_bot`). It forms one part of the team that assists in the running of /r/TranscribersOfReddit (ToR), which is privileged to have the incredibly important job of organizing crowd-sourced transcriptions of images, video, and audio.
+This is the source code for the ToR Flair Moderator Helper (`/u/tor_flair_bot`). It forms one part of [the team][tor-team] that assists in the running of /r/TranscribersOfReddit (ToR), which is privileged to have the incredibly important job of organizing crowd-sourced transcriptions of images, video, and audio.
 
 As a whole, the ToR bots are designed to be as light on local resources as they can be, though there are some external requirements.
 
@@ -14,17 +14,19 @@ As a whole, the ToR bots are designed to be as light on local resources as they 
 > contains information such as the useragents and certain secrets. It is built
 > for Python 3.6.
 
+[tor-team]: https://github.com/TranscribersOfReddit
+
 ## Installation
 
 ```
-$ git clone https://github.com/TranscribersOfReddit/ToR_Flair_Bot.git tor-flair
-$ pip install --process-dependency-links tor-flair/
+$ git clone https://github.com/TranscribersOfReddit/ToR_Flair.git tor_flair
+$ pip install --process-dependency-links tor_flair/
 ```
 
 OR
 
 ```
-$ pip install --process-dependency-links 'git+https://github.com/TranscribersOfReddit/ToR_Flair.git@master#egg=tor_flair'
+$ pip install --process-dependency-links 'git+https://github.com/TranscribersOfReddit/ToR_Flair.git@master#egg=tor_flair-0'
 ```
 
 ## High-level functionality
