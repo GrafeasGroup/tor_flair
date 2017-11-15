@@ -17,14 +17,14 @@ As a whole, the ToR bots are designed to be as light on local resources as they 
 ## Installation
 
 ```
-$ git clone https://github.com/TranscribersOfReddit/ToR_Flair_Bot.git tor-flair
+$ git clone https://github.com/GrafeasGroup/tor_flair.git tor-flair
 $ pip install --process-dependency-links tor-flair/
 ```
 
 OR
 
 ```
-$ pip install --process-dependency-links 'git+https://github.com/TranscribersOfReddit/ToR_Flair.git@master#egg=tor_flair'
+$ pip install --process-dependency-links 'git+https://github.com/GrafeasGroup/tor_flair.git@master#egg=tor_flair'
 ```
 
 ## High-level functionality
